@@ -1,0 +1,19 @@
+{
+  "name": "member",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "items": {
+      "type": "hasMany",
+      "model": "item",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

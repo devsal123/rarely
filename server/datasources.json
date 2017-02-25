@@ -1,0 +1,11 @@
+{
+  "rarelyMongo": {
+    "host": "localhost",
+    "port": 27017,
+    "database": "rarely",
+    "password": "rarely123##",
+    "name": "rarelyMongo",
+    "user": "salm",
+    "connector": "mongodb"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "item": {
+    "dataSource": "rarelyMongo",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "category": {
+    "dataSource": "rarelyMongo",
+    "public": true
+  },
+  "subcategory": {
+    "dataSource": "rarelyMongo",
+    "public": true
+  },
+  "member": {
+    "dataSource": "rarelyMongo",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  }
+}

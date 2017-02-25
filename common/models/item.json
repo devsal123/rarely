@@ -1,0 +1,52 @@
+{
+  "name": "item",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "gps": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "picture": {
+      "type": "string",
+      "required": true,
+      "default": "default_item.jpg"
+    },
+    "description": {
+      "type": "string"
+    },
+    "created": {
+      "type": "date",
+      "required": true
+    },
+    "given": {
+      "type": "date",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "member": {
+      "type": "belongsTo",
+      "model": "member",
+      "foreignKey": ""
+    },
+    "category": {
+      "type": "belongsTo",
+      "model": "category",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
